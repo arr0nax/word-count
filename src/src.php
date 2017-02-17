@@ -2,7 +2,6 @@
     class RepeatCounter {
         public $sentence_array;
         public $word;
-        public $sentece_underlined;
 
         function parse_sentence($sentence)
         {
@@ -27,19 +26,6 @@
             $this->word = $word;
             $this->parse_sentence($sentence);
             return $this->count_words($word);
-        }
-        function underline_sentence()
-        {
-            foreach($this->sentence_array as $single_word) {
-                if ($single_word == $this->word) {
-                    $this->sentence_underlined .= '<ul> '.$single_word.'</ul>';
-                }
-                else
-                {
-                    $this->sentence_underlined .= ' '.$single_word;
-                }
-            }
-            return $this->sentence_underlined;
         }
 
     }

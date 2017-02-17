@@ -9,30 +9,49 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <form action="/count" method="post">
-            <div class="well">
-                <div class="container-fluid">
-                    <label for="sentence">Enter a Sentence</label>
-                </div>
-                <div class="container-fluid">
-                    <input type="text" name="sentence" value="">
-                </div>
-                <div class="container-fluid">
-                    <label for="word">Enter a Word</label>
-                </div>
-                <div class="container-fluid">
-                    <input type="text" name="word" value="">
-                </div>
-                <div class="container-fluid">
-                    <button type="submit" name="button">Count!</button>
-                </div>
-            </div>
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <h1>Repeating yourself?</h1>
+          <h2 style="padding-left:5vw;">Let's find out.</h2>
+        </div>
+      </div>
+      <form action="/count" method="post">
+        <div class="well formwell">
+          <div class="container-fluid">
+            <label for="sentence">Enter a Sentence</label>
+          </div>
+          <div class="container-fluid">
+            <input style="width: 75%;"type="text" name="sentence" value="">
+          </div>
+          <div class="container-fluid">
+            <label for="word">Enter a Word</label>
+          </div>
+          <div class="container-fluid">
+            <input type="text" name="word" value="">
+          </div>
+          <div class="container-fluid">
+            <button type="submit" name="button">Count!</button>
+          </div>
+        </div>
         </form>
+        {% if word_count %}
         <div class="result">
+          <div class="sentence">
+
             <div class="container-fluid">
                 <h3>Your word appeared {{word_count}} times.</h3>
+                <h2>
+                  {%for word in sentence%}
+                    {% if word == target_word%}
+                      <b> {{target_word}}</b>
+                    {%else%}
+                      {{word}}
+                    {%endif%}
+                  {%endfor%}
+                </h2>
             </div>
-            {{sentence}}
+          </div>
         </div>
+        {%endif%}
     </body>
 </html>

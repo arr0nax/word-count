@@ -13,8 +13,7 @@
     $app->post('/count', function() use($app) {
         $count = new RepeatCounter;
         $word_count = $count->CountRepeats($_POST['sentence'],$_POST['word']);
-        $underlined_sentence = $count->underline_sentence();
-        return $app["twig"]->render("root.html.twig", ['word_count'=>$word_count,'sentence'=>$underlined_sentence]);
+        return $app["twig"]->render("root.html.twig", ['word_count'=>$word_count,'sentence'=>$count->sentence_array,'target_word'=>$count->word]);
     });
 
     return $app;

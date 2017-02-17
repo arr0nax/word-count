@@ -1,0 +1,18 @@
+.jumbotron {
+  background-image: url('/../img/thinking.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0,0,0,0;
+}
+
+.result {
+  height: 50vh;
+  background-image: url('/../img/result.jpg');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sentence {
+  width: 50vw;
+}
