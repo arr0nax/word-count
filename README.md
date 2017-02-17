@@ -1,37 +1,32 @@
-# _{Application Name}_
+# _{Word Counter}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{An application to count the repetition of words in a sentence}, {February 2017}_
 
-#### By _**{List of contributors}**_
+#### By _**{Clayton Collins}**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_{This program accepts a sentence and a word, then returns the amount of times that the word occurs in the sentence. It does this by breaking the sentence in to an array by spaces, then iterating through and checking each word to see if it matches the inputed word.  }_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Clone this repository_
+* _In terminal, navigate to the project directory and run "composer install"_
+* _Navigate to the 'web' folder and begin a PHP server (run 'php -S localhost:8000)_
+* _open 'localhost:8000' in your web browser_
+* _Enter a sentence and a word!_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_{ Because of how it is set up, this application WILL NOT recognize words that are spelled the same but are separated by different punctuation. I could not think of an efficient way to handle this without using REGEX. }_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{Let me know if you run into any issues or have questions, ideas or concerns. Contact me or make a pull request.}_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_{Uses PHP, Silex, Twig, PHPunit, HTML, Bootstrap, and CSS.}_
 
-### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2017 **_{List of contributors or company name}_**
+Copyright (c) 2017 **_{Clayton Collins}_**
