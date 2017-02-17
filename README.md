@@ -1,12 +1,12 @@
-# _{Word Counter}_
+# Word Counter
 
-#### _{An application to count the repetition of words in a sentence}, {February 2017}_
+#### An application to count the repetition of words in a sentence, February 2017
 
-#### By _**{Clayton Collins}**_
+#### By **Clayton Collins**
 
 ## Description
 
-_{This program accepts a sentence and a word, then returns the amount of times that the word occurs in the sentence. It does this by breaking the sentence in to an array by spaces, then iterating through and checking each word to see if it matches the inputed word.  }_
+This program accepts a sentence and a word, then returns the amount of times that the word occurs in the sentence. It does this by breaking the sentence in to an array by spaces, then iterating through and checking each word to see if it matches the inputed word.  
 
 ## Setup/Installation Requirements
 
@@ -18,15 +18,15 @@ _{This program accepts a sentence and a word, then returns the amount of times t
 
 ## Known Bugs
 
-_{ Because of how it is set up, this application WILL NOT recognize words that are spelled the same but are separated by different punctuation. I could not think of an efficient way to handle this without using REGEX. }_
+ Because of how it is set up, this application WILL NOT recognize words that are spelled the same but are separated by different punctuation. I could not think of an efficient way to handle this without using REGEX.
 
 ## Support and contact details
 
-_{Let me know if you run into any issues or have questions, ideas or concerns. Contact me or make a pull request.}_
+Let me know if you run into any issues or have questions, ideas or concerns. Contact me or make a pull request.
 
 ## Technologies Used
 
-_{Uses PHP, Silex, Twig, PHPunit, HTML, Bootstrap, and CSS.}_
+Uses PHP, Silex, Twig, PHPunit, HTML, Bootstrap, and CSS.
 
 
-Copyright (c) 2017 **_{Clayton Collins}_**
+Copyright (c) 2017 **Clayton Collins**
