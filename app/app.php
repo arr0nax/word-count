@@ -7,8 +7,14 @@
     $app->register(new Silex\Provider\TwigServiceProvider(), ["twig.path" => __DIR__."/../views"]);
 
     $app->get('/', function() use($app) {
-        $result = 'hello';
-        return $app["twig"]->render("root.html.twig", ['result' => $result]);
+        return $app["twig"]->render("root.html.twig");
+    });
+
+    $app->post('/count', function() use($app) {
+        $count = new Count;
+        $count->parse_sentence($_POST['sentence']);
+        $word_count = $count->count_words($_POST['word']);
+        return $app["twig"]->render("count.html.twig", ['word_count'=>$word_count]);
     });
 
     return $app;

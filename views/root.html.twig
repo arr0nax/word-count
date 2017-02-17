@@ -5,6 +5,12 @@
         <title></title>
     </head>
     <body>
-        {{result}}
+        <form action="/count" method="post">
+            <label for="sentence">Enter a Sentence</label>
+            <input type="text" name="sentence" value="">
+            <label for="word">Enter a Word</label>
+            <input type="text" name="word" value="">
+            <button type="submit" name="button">Count!</button>
+        </form>
     </body>
 </html>
