@@ -3,14 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script type="text/javascript" src='js/scripts.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <form action="/count" method="post">
-            <label for="sentence">Enter a Sentence</label>
-            <input type="text" name="sentence" value="">
-            <label for="word">Enter a Word</label>
-            <input type="text" name="word" value="">
-            <button type="submit" name="button">Count!</button>
+            <div class="well">
+                <div class="container-fluid">
+                    <label for="sentence">Enter a Sentence</label>
+                </div>
+                <div class="container-fluid">
+                    <input type="text" name="sentence" value="">
+                </div>
+                <div class="container-fluid">
+                    <label for="word">Enter a Word</label>
+                </div>
+                <div class="container-fluid">
+                    <input type="text" name="word" value="">
+                </div>
+                <div class="container-fluid">
+                    <button type="submit" name="button">Count!</button>
+                </div>
+            </div>
         </form>
+        <div class="result">
+            <div class="container-fluid">
+                <h3>Your word appeared {{word_count}} times.</h3>
+            </div>
+            {{sentence}}
+        </div>
     </body>
 </html>
